@@ -31,3 +31,24 @@ const user4 = {
 };
 
 console.log('user4 full name', user4.getFullName());
+
+const user5 = {
+    firstName: 'Alex',
+    lastName: 'Lee',
+    getFullName() { //function 생략
+        return `${this.firstName} ${this.lastName}`;
+    }
+};
+
+console.log('user5 full name', user5.getFullName());
+
+const propertyName = 'birth';
+const getJob = () => 'job';
+
+const codeit = {
+    ['topic'+'name']: 'Modern JS',
+    [propertyName]: 2017,
+    [getJob()]: 'Lecturer',
+};
+
+console.log( 'codeit', codeit);
