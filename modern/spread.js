@@ -27,3 +27,23 @@ const newObject = { ...members};
 
 console.log('nO', newObject);
 // spread object into array No
+
+const getAge=function () {
+    const date = new Date();
+    return date.getFullYear() - this.birth + 1;
+  }
+  
+  const user = {
+    getAge,
+    name: 'codeit',
+    birth: 2017, };  
+    
+    console.log(user)
+    const propertyName = 'birth';
+const getJob = () => 'job';
+
+const codeit = {
+  ['topic' + 'Name']: 'Modern JavaScript',
+  [propertyName]: 2017,
+  [getJob()]: '프로그래밍 강사',
+};

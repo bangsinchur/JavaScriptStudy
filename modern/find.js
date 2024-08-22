@@ -18,12 +18,15 @@ console.log('mine', myLaptop);
 //단,fillter는 index값은 해당 배열값 모두가 나옴.
 // index는 return값에 맞는 조건을 찾을때 멈춘다.
 console.log('--------some,every----------------------');
+// some : 조건을 만족하는 요소가 1개이상 있는지
+//every : 모든 요소가 조건을 만족하는지
+
 const numbers = [1,3,5,7,9];
 
 const someReturn = numbers.some(
     (element,index,array)=> {
     console.log('index', index);
-    return element >5;
+    return element !== 5;
 });// index는 return값에 맞는 조건을 찾을때 멈춘다.
 console.log('some',someReturn);
 

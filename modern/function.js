@@ -25,3 +25,4 @@ function myFunction(){
 const f= myFunction();
 console.log('f', f);
 f();//=== myFunction()(); 같은뜻.
+// ()로 한번더 호출해줘야한다.
